@@ -1,0 +1,6 @@
+.gradientBlue {
+  width: 100%;
+  max-width: 600px;
+  padding: 60px;
+  background-image: linear-gradient(#165583, #002f52);
+}

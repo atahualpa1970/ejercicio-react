@@ -1,22 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import CreditFrame from './Layout/Components/CreditFrame';
+import ExternalFrame from './Layout/Components/ExternalFrame';
+import InternalFrame from './Layout/Components/InternalFrame';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className='App montserrat'>
+      <header className='App-header'>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          DigBang Challenge (Rodolfo Alvarez)
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <ExternalFrame>
+          <InternalFrame>
+            <CreditFrame 
+              amountMin={2000}
+              amountMax={50000}
+              monthMin={3}
+              monthMax={24}
+              rate={45}
+            />
+          </InternalFrame>
+        </ExternalFrame>
       </header>
     </div>
   );

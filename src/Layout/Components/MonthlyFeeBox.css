@@ -1,0 +1,11 @@
+.darkBlueBox {
+  width: 100%;
+  background: rgb(8, 8, 96);
+  margin-top: 20px;
+}
+
+.justifyContentAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}

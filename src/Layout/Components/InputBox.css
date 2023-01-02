@@ -1,0 +1,11 @@
+.outlineInput {
+  background-color: transparent;
+  border: 1px solid white;
+  margin-top: 0;
+  width:150px;
+  height: 35px;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  text-align: center;
+}

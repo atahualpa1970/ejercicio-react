@@ -1,0 +1,29 @@
+.small {
+  font-size: small;
+  background: red;
+  color: 'white'
+}
+
+.normal {
+  font-size: medium;
+  background: rgb(3, 106, 218);
+  color: white;
+  max-width: 150px;
+  height: 60px;
+  padding: 5px;
+}
+
+.big {
+  font-size: x-large;
+  background: green;
+  color: white;
+  min-width: 340px;
+  height: 60px;
+  padding: 10px 35px;
+}
+
+.justifyContentBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

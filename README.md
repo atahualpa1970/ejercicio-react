@@ -1,3 +1,55 @@
+# Resolución de Ejercicio (Rodolfo Alvarez)
+====================================================================
+El maquetado se hizo con los siguiente compnentes:
+
+* [ExternalFrame] e [InternalFrame] para el recuadro contenedor
+
+* [CreditFrame] el componente principal que llama al resto
+  Tiene cinco props: 
+    amountMin={number}        -> Monto mínimo
+    amountMax={number}        -> Monto máximo
+    monthMin={number}         -> Cantidad mínima de meses de plazo
+    monthMax={number}         -> Cantidad máxima de meses de plazo
+    rate={number}             -> Tasa de interés
+
+* [SliderBox] que se encarga de los sliders y llama al InputBox
+  Tiene siete props:         
+    type='currency | number'  -> Valores con el signo $ o sin él
+    title={string}            -> Titulo
+    min={number}              -> Valor minimo del slider
+    max={number}              -> Valor máximo del slider
+    step={number}             -> Valor entre cada paso del slider
+    value={number}            -> Valor actual del slider
+    return={function}         -> Función que retorna el 'value' hacia el nodo padre
+
+* [InputBox] muestra un valor recibido segun el tipo y devuelve un valor segun márgenes establecidos
+  Tiene cinco props:
+    min={number}              -> Valor minimo del input
+    max={number}              -> Valor máximo del input
+    type='currency | number'  -> Valores con el signo $ o sin él
+    value={number}            -> Valor actual del input
+    return={function}         -> Función que retorna el 'value' hacia el nodo padre
+
+* [MontlyFeeBox] calcula y muestra el valor de la cuota mensual con su título
+  Tiene cuatro props:
+    title={string}            -> Titulo
+    amount={amount}           -> Monto solicitado
+    months={months}           -> Cantidad de mese de plazo
+    rate={props.rate}         -> Tasa de interés
+  + Se puede mejorar agregando complejidad al cáclulo, por ejemplo con tipo de amortización
+
+* [Button] son 3 tipos de botones aunque solo se usan dos
+  Tiene dos props:
+    title={string}                    -> Titulo
+    sizeName='big | normal | small'   -> El tamaño del botón con style asociado
+
+# En todos los casos se puede mejorar el componente agregando styles
+# por ejemplo pasando el backgrounColor como props
+
+# El ejercicio se desarrolló y probó con Node v16.15.0
+
+====================================================================
+
 # Ejercicio React
 
 ## Ejercicio
